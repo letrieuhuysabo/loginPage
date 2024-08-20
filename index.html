@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styleLogin.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="login.js"></script>
+</head>
+<body>
+    <main class="">
+        <div class="login">
+            <div class="title flex">
+                <img src="images/logo.png" alt="Logo"/>
+                <div class="flex_column">
+                    <strong>HDBank</strong>
+                    <em>Uy tín</em>
+                    <em>Tận tâm</em>
+                    <em>Chuyên nghiệp</em>
+                </div>
+            </div>
+            <div class="flex_column login_Input">
+                <div id="announceForUser" class="announceAtInput hidden">*Vui lòng nhập số tài khoản</div>
+                <input id="user" type="text" placeholder="Số tài khoản"/>
+                <div id="announceForPass" class="announceAtInput hidden">*Vui lòng nhập mật khẩu</div>
+                <input id="pass" type="password" placeholder="Mật khẩu"/>
+                <div class="flex">
+                    <div id="notRobot">
+                        <div id="announceForRobot" class="announceAtInput hidden">*Vui lòng xác nhận tại đây</div>
+                        <div class="flex">
+                            <input type="checkbox"/>
+                            <div>Tôi không phải là người máy</div>
+                        </div>
+                    </div>
+                    <a id ="submitButton" class="flex" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="forgetPass">
+                <a id="forgetPass" href="#"><ins>Quên mật khẩu ?</ins></a>
+                <div id="announceAboutForgetPassword" class="hidden">
+                    *Vui lòng liên hệ đến chúng tôi thông qua những hình thức bên dưới để được hỗ trợ.
+                    <div class="flex contact_icons">
+                        <a href="#"><img src="images/youtube_icon.png" alt="youtube"/></a>
+                        <a href="#"><img src="images/facebook_icon.png" alt="facebook"/></a>
+                        <a href="#"><img src="images/discord_icon.png" alt="discord"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services">
+            <div class="title"><strong>Dịch vụ nổi bật</strong></div>
+            <img src="images/dich_vu_du_lich.jpg" alt="service"/>
+            <button id="leftButton"><i class="fa-solid fa-arrow-left"></i></button>
+            <button id="rightButton"><i class="fa-solid fa-arrow-right"></i></button>
+            <div class="footOfServices">
+                <div class="serviceName">Du lịch & Đi lại</div>
+                <p class="serviceDetails">Ngân hàng chúng tôi cung cấp dịch vụ hỗ trợ du lịch và đi lại với ưu đãi đặc biệt, bao gồm bảo hiểm du lịch toàn cầu và hỗ trợ khẩn cấp 24/7. Khách hàng cũng có thể dễ dàng quản lý chi tiêu và nhận các phần thưởng hấp dẫn khi sử dụng thẻ tín dụng của ngân hàng trong các chuyến đi.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

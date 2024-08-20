@@ -1,0 +1,224 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-image: url("images/4262098.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+/* flex theo chieu ngang */
+.flex{
+    display: flex;
+}
+/* flex theo chieu doc */
+.flex_column{
+    display: flex;
+    flex-direction: column;
+}
+/* khung login bên trái */
+.login{
+    background: rgba(119, 138, 157, 0.8);
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 30%;
+    height: 75%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+/* tiêu đề */
+.login>.title{
+    position: absolute;
+    width:60%;
+    right:20%;
+    left:20%;
+    top: 5%;
+    align-items: center;
+    color: rgb(6, 29, 37);
+    /* box-sizing: border-box; */
+}
+.login>.title>img{
+    width: 100%;
+}
+.title>div>strong{
+    color:darkblue;
+    font-size: 2rem;
+}
+/* phần nhập liệu */
+.login_Input{
+    position: absolute;
+    width:90%;
+    height: 70%;
+    left: 5%;
+    right: 5%;
+    top: 30%;
+}
+/* số tài khoản và mật khẩu */
+.login_Input>input{
+    height: 10%;
+    margin: 2% 0;
+    border: 0;
+    border-bottom: 1px solid black;
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+}
+.login_Input>input::placeholder{
+    color: white;
+}
+.announceAtInput{
+    color: red;
+}
+/* tắt viền khi ấn vào ô nhập liệu */
+.login_Input>input:focus{
+    outline-width: 0;
+}
+/* xác minh người và nút xác nhận */
+.login_Input>div:last-child{
+    margin: 10% 0;
+    height: 20%;
+    justify-content: space-between;
+}
+/* ô xác nhận người */
+#notRobot{
+    width: 80%;
+}
+#notRobot>div>input{
+    flex:1;
+    box-sizing: border-box;
+}
+#notRobot>div>div{
+    font-size: 1.2rem;
+    flex:4;
+}
+/* nút xác nhận đăng nhập*/
+.login_Input>div>a{
+    height: 100%;
+    width: 20%;
+    border-radius: 50%;
+    background-color: #2e73ff;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    transition: transform ease 0.5s;
+    text-decoration: none;
+}
+.login_Input>div>a>i{
+    font-size: 3rem;
+}
+.login_Input>div>a:hover{
+    transform: scale(1.2);
+}
+/* Quên mật khẩu */
+.forgetPass{
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    right:10%;
+}
+.forgetPass>a>ins{
+    color: rgb(44, 200, 227);
+    font-size: 1.2rem;
+}
+.forgetPass>a>ins:hover{
+    color:rgb(189, 32, 207);
+}
+.forgetPass>div{
+    margin-top:2%;
+    color:rgb(255, 0, 0);
+    font-size: 1.1rem;
+}
+.forgetPass>div>.contact_icons{
+    margin-top: 3%;
+    justify-content: center;
+}
+.forgetPass>div>.contact_icons>a{
+    width:17%;
+}
+.forgetPass>div>.contact_icons>a>img{
+    width: 100%;
+}
+/* Class dùng để ẩn object */
+.hidden{
+    display:none;
+}
+/* giới thiệu các dịch vụ(khung bên phải) */
+.services{
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid black;
+    position: absolute;
+    width: 50%;
+    height: 75%;
+    top: 15%;
+    right: 10%;
+}
+/* Tiêu đề "Dịch vụ nổi bật" */
+.services>.title>strong{
+    color: darkblue;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .5rem;
+    background-color: rgba(31, 205, 221, 0.7);
+}
+/* Ảnh đc demo */
+.services>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+/* 2 nút chuyển 2 bên */
+.services>button{
+    font-size: 1.5rem;
+    border-radius: 50% ;
+    position: absolute;
+    width: 6%;
+    height: 8%;
+    top: 46%;
+    padding: 0;
+    z-index: 999;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.services>button:hover{
+    background-color: darkblue;
+    color: white;
+}
+/* nút trái */
+.services>#leftButton{
+    left: 3%;
+}
+/* nút phải */
+.services>#rightButton{
+    right: 3%;
+}
+/* vùng thông tin bên dưới */
+.services>.footOfServices{
+    position: absolute;
+    border-radius: 0 0 30px 30px;
+    bottom: 0%;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(rgba(255, 254, 254, 0),rgba(0, 0, 0, 0.9));
+}
+/* tên dịch vụ */
+.services>.footOfServices>.serviceName{
+    position: absolute;
+    top:40%;
+    left: 5%;
+    font-size: 2.5rem;
+    color:lightblue;
+}
+/* thông tin dịch vụ */
+.services>.footOfServices>.serviceDetails{
+    position: absolute;
+    top:60%;
+    left: 5%;
+    right: 3%;
+    font-size: 1rem;
+    color:white;
+}
